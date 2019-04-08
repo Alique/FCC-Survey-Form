@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Time Capsule Survey</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+</head>
+
+<body>
+	<div id="main">
+    <h1 id="title">Meditation Time Capsule</h1>
+    <div id="form-outer"> 
+      <p id="description">
+        Track how is your today's meditation technique for future reference
+      </p>
+      <form id="survey-form" method="GET" action="#">
+        <div class="rowTab">
+          <div class="labels">
+            <label id="name-label" for="name"> *Name: </label>
+          </div>
+          <div class="rightTab">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label" for="email"> *Email: </label>
+          </div>
+          <div class="rightTab">
+            <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="number-label" for="age"> *Age: </label>
+          </div>
+          <div class="rightTab">
+            <input type="number" name="age" id="number" min="3" max="125" class="input-field" placeholder="Age">
+          </div>          
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="currentLevel"> What is your current level of practice? </label>
+          </div>
+          <div class="rightTab">
+            <select id="dropdown" name="currentLevel" class="dropdown">
+              <option disabled value>Select an option:</option>
+              <option value="beginer"> Beginer </option>
+              <option value="intermediate"> Intermediate </option>
+              <option value="advanced"> Advanced </option>
+            </select>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="number-label" for="time"> *How many minutes do you meditate a day? </label>
+          </div>
+          <div class="rightTab">
+            <input type="number" name="age" id="number" min="15" max="360" class="input-field" placeholder="Minutes">
+          </div>          
+        </div>
+        <div class="rowTab"> 
+          <div class="labels">
+            <label for="howDoYouMeditate"> *How do you meditate? </label>
+          </div>
+          <div class="rightTab">
+            <ul class="howDoYouMeditate">
+              <li class="radio"><label> Lotus position <input type="radio" name="radio-buttons" class="userRatings" value="fullLotus"></label></li>
+              <li class="radio"><label> Half Lotus position <input type="radio" name="radio-buttons" class="userRatings" value="halfLotus"></label></li>
+              <li class="radio"><label>Sitting on a chair <input type="radio" name="radio-buttons" class="userRatings" value="onAChair"></label></li>
+              <li class="radio"><label>Laying down <input type="radio" name="radio-buttons" class="userRatings" value="layingDown"></label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="futurePreferences">How would you like to improve your meditation in the future? </label>
+          </div>
+          <div class="rightTab">
+            <ul id="futurePreferences" class="futurePreferences">
+              <li class="checkbox"><label><input type="checkbox" name="future" value="length" class="futurePreferences"> I would like to meditate longer</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="future" value="focus" class="futurePreferences"> I would like to focus better in the time I've set for my meditation</label></li>
+              <li class="checkbox"><label><input type="checkbox" name="future" value="position" class="futurePreferences"> I would like to meditate in the full lotus position</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label for="comments"> Please leave any comment for your future consideration: </label>
+          </div>
+          <div class="rightTab">
+            <textarea id="comments" class="input-field" style="height: 50px; resize: vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+          </div>
+        </div>
+        <button id="submit" type="submit">Send</button>
+      </form>
+    </div>
+	</div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
